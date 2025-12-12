@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background: #2d1b3f; color:#fff; }

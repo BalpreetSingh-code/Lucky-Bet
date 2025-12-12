@@ -1,0 +1,128 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	background: #1a0d2e;
+}
+.navbar a {
+	color: #f7931e;
+	text-decoration: none;
+	margin: 0 0.5rem;
+}
+.footer {
+	text-align: center;
+	padding: 1rem;
+	background: #1a0d2e;
+	color: #aaa;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #2d1b45; /* background like your screenshot */
+}
+.card {
+	background-color: #0e0b14;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 320px;
+	text-align: center;
+}
+.card h2 {
+	color: #f5c46f;
+	margin-bottom: 10px;
+}
+.card p {
+	margin-bottom: 30px;
+	color: #ddd;
+}
+.container input {
+	width: 100%;
+	padding: 0.6rem;
+	margin-bottom: 1rem;
+	border-radius: 6px;
+	border: 1px solid #555;
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff;
+}
+.card input::placeholder {
+	color: #999;
+}
+.container button {
+	width: 100%;
+	padding: 0.7rem;
+	background: #f7931e;
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.card button:hover {
+	background-color: #fb8c00;
+}
+.link,
+.link, .footer-links {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.spaced-link {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.spaced-link:hover {
+	text-decoration: underline;
+}
+.link a,
+.footer-links a {
+	color: #ddd;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin: 0 0.3rem;
+}
+.selection {
+	text-align: center;
+	padding: 2rem;
+	background: url("/images/casino-bg.jpg") center/cover no-repeat;
+	height: 80vh;
+}
+.selection h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	color: #f7931e;
+}
+.games {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+}
+.game-card {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 1rem;
+	border-radius: 8px;
+	width: 160px;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+.game-card:hover {
+	transform: translateY(-5px);
+}
+.game-card h3 {
+	color: #f7931e;
+	margin-top: 0.5rem;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+

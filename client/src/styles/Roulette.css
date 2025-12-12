@@ -1,0 +1,211 @@
+.roulette-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.roulette-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.roulette-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f7931e;
+}
+
+.balance {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.roulette-game {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.wheel-container {
+  flex: 0 0 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.betting-panel {
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bet-amount {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bet-amount label {
+  font-size: 1.1rem;
+}
+
+.bet-amount input {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 100px;
+}
+
+.bet-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.bet-shortcuts button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bet-shortcuts button:hover:not(:disabled) {
+  background-color: #444;
+}
+
+.bet-shortcuts button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.betting-options {
+  margin-bottom: 20px;
+}
+
+.bet-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.bet-option {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+}
+
+.bet-option:hover:not(:disabled) {
+  background-color: #444;
+}
+
+.bet-option.selected {
+  background-color: #f7931e;
+  border-color: #f7931e;
+  color: #000;
+}
+
+.bet-option.zero {
+  background-color: #006400;
+  color: #fff;
+}
+
+.bet-option.zero.selected {
+  background-color: #00a000;
+  border-color: #00a000;
+  color: #fff;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.bet-option.number {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.selected-bet {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.spin-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #f7931e;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+
+.spin-button:hover:not(:disabled) {
+  background-color: #f9a94a;
+}
+
+.spin-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .roulette-game {
+    flex-direction: column;
+  }
+  
+  .wheel-container, .betting-panel {
+    flex: 1 1 100%;
+  }
+  
+  .number-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.bet-option.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}

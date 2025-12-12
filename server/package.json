@@ -1,0 +1,21 @@
+{
+	"name": "1-server",
+	"scripts": {
+		"server": "nodemon  --watch 'src' --exec 'tsx' app.ts",
+		"server:tsx": "tsx watch app.ts",
+		"test": "jest --runInBand --detectOpenHandles"
+	},
+	"dependencies": {
+		"postgres": "^3.4.3",
+		"prettier": "^3.2.4",
+		"typescript": "^5.3.3"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.14",
+		"@types/node": "^20.11.10",
+		"jest": "^29.7.0",
+		"nodemon": "^3.1.10",
+		"ts-jest": "^29.3.4",
+		"tsx": "^4.19.4"
+	}
+}
